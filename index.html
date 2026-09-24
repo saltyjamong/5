@@ -401,7 +401,7 @@ h1 {
 <body>
 
     <section class="character-profile">
-        <!-- CHARACTER INTRODUCTION -->
+        <!-- CHARACTER -->
         <h1>Character Introduction</h1>
         <!-- 기본 정보 -->
         <div class="basic-info">
@@ -451,5 +451,132 @@ h1 {
             </ul>
         </div>
     </section>
+
+    .character-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 140px 30px;
+    box-sizing: border-box;
+}
+
+
+/* 제목 영역 */
+
+.character-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 60px;
+}
+
+.character-number {
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.character-title h2 {
+    margin: 0;
+    font-family: "Georgia", serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #111;
+}
+
+.character-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* 본문 */
+
+.character-content {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+
+/* 작은 제목 */
+
+.character-subtitle {
+    margin: 0 0 35px 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    color: #777;
+}
+
+
+/* 인트로 글 */
+
+.character-text {
+    max-width: 750px;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    line-height: 2.2;
+
+    color: #222;
+}
+
+
+/* 문단 */
+
+.character-text p {
+    margin: 0 0 28px 0;
+}
+
+
+/* 첫 문단 강조 */
+
+.character-text p:first-child {
+    font-size: 19px;
+    line-height: 1.9;
+    color: #111;
+}
+
+
+/* 모바일 */
+
+@media (max-width: 600px) {
+
+    .character-section {
+        padding: 100px 20px;
+    }
+
+    .character-title {
+        margin-bottom: 45px;
+    }
+
+    .character-title h2 {
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .character-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .character-text {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .character-text p:first-child {
+        font-size: 17px;
+    }
+
+}
+
+</style>
+    
 </body>
 </html>
